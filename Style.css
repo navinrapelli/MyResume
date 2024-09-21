@@ -16,6 +16,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .contents {
+    height: 100vh;
+    width: 90%;
+  }
   .profile {
     margin: 20px;
     position: fixed;
@@ -134,6 +138,62 @@
     background-color: rgb(206, 168, 206);
     font-size: large;
   }
+
+  #skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .primaryContainer {
+    margin: 2%;
+    margin-top: 16%;
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .secondaryContainer {
+    margin: 2%;
+    margin-top: 18%;
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .barContainer {
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(225deg, var(--main-color), #c58c7d);
+    box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #863d3d;
+  }
+  .barOuter {
+    margin: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 30px;
+    width: 300px;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .barInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #003049;
+    animation: skills 1s ease-in normal;
+  }
 }
 @media (max-width: 600px) {
   body {
@@ -141,13 +201,9 @@
     flex-direction: column;
   }
 
-  .profile {
-    position: relative;
-    height: 95vh;
+  .contents {
+    height: 100vh;
     width: 90%;
-    border-radius: 50px;
-    background: linear-gradient(225deg, var(--main-color), #756675);
-    box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #3f2b2b;
   }
 
   #pic {
@@ -257,6 +313,63 @@
   .menu a:hover {
     background-color: rgb(206, 168, 206);
   }
+
+  #skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .primaryContainer {
+    margin: 2%;
+    margin-top: 16%;
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .secondaryContainer {
+    margin: 2%;
+    margin-top: 18%;
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .barContainer {
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(225deg, var(--main-color), #c58c7d);
+    box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #863d3d;
+    margin-top: 10px;
+  }
+  .barOuter {
+    margin: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 30px;
+    width: 300px;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .barInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #003049;
+    animation: skills 1s ease-in normal;
+  }
 }
 
 .details {
@@ -280,11 +393,6 @@
   animation: moveAni 5s alternate infinite;
 }
 /* Content */
-
-.contents {
-  height: 100vh;
-  width: 90%;
-}
 
 #home {
   display: flex;
@@ -324,62 +432,6 @@
 /* Menu */
 
 /* bar */
-
-#skills {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.primaryContainer {
-  margin: 2%;
-  margin-top: 16%;
-  height: 80vh;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.secondaryContainer {
-  margin: 2%;
-  margin-top: 18%;
-  display: flex;
-  height: 30vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.barContainer {
-  padding: 5px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(225deg, var(--main-color), #c58c7d);
-  box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #863d3d;
-}
-.barOuter {
-  margin: 10px;
-  background-color: whitesmoke;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  height: 30px;
-  width: 300px;
-  color: white;
-  border-radius: 20px;
-}
-
-.barInner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 30px;
-  border-radius: 20px;
-  background-color: #003049;
-  animation: skills 1s ease-in normal;
-}
 
 .barInner:hover {
   background-color: #669bbc;
