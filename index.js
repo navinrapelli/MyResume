@@ -5,6 +5,12 @@ function plusDivs(n) {
   showDivs((slideIndex += n));
 }
 
+console.log(screen.width + "width");
+
+if (screen.width < 600) {
+  var v = document.getElementById("mainMenu");
+  v.classList.add("d-none");
+}
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");

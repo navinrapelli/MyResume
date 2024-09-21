@@ -194,18 +194,65 @@
     background-color: #003049;
     animation: skills 1s ease-in normal;
   }
+  .projctMain {
+    margin-top: 18%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .sliding {
+    position: relative;
+    animation: visibility 1s linear;
+  }
+  .d-block {
+    display: block !important;
+  }
+  .d-none {
+    display: none !important;
+  }
+  .projectContainer {
+    margin: 20px;
+    height: 70vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 20px;
+    background: linear-gradient(225deg, var(--main-color), #c58c7d);
+    box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #863d3d;
+  }
+  .projectImg {
+    margin-top: 4%;
+    width: 600px;
+    height: 300px;
+  }
+
+  .chatImages img {
+    margin-top: 4%;
+    width: 150px;
+    height: 300px;
+  }
+
+  .discription {
+    margin: 10px;
+  }
+
+  .title {
+    margin-top: 2%;
+  }
+  #icons {
+    font-size: 30px;
+  }
 }
 @media (max-width: 600px) {
   body {
     display: flex;
     flex-direction: column;
   }
-
-  .contents {
-    height: 100vh;
-    width: 90%;
-  }
-
   #pic {
     position: relative;
     left: 15%;
@@ -241,7 +288,7 @@
     padding: 10px;
     border-radius: 5px;
     color: var(--box-color);
-    background-color: rgb(186, 127, 111);
+    background-color: var(--back-color);
     transition-property: all;
     transition-duration: 10ms;
     transition-delay: 50ms;
@@ -269,7 +316,7 @@
     text-align: center;
     right: 12%;
     top: -5px;
-    background-color: #ba7f6f;
+    background-color: var(--back-color);
     height: 20px;
     width: 20px;
     border: 2px white solid;
@@ -370,6 +417,61 @@
     background-color: #003049;
     animation: skills 1s ease-in normal;
   }
+
+  .projctMain {
+    margin-top: 18%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .sliding {
+    position: relative;
+    animation: visibility 1s linear;
+  }
+  .d-block {
+    display: block !important;
+  }
+  .d-none {
+    display: none !important;
+  }
+  .projectContainer {
+    margin: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 20px;
+    background: linear-gradient(225deg, var(--main-color), #c58c7d);
+    box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #863d3d;
+  }
+  .projectImg {
+    margin-top: 4%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .chatImages img {
+    margin-top: 4%;
+    width: 150px;
+    height: 100px;
+  }
+
+  .discription {
+    margin: 10px;
+  }
+
+  .title {
+    margin-top: 2%;
+  }
+  #icons {
+    font-size: 30px;
+  }
+  #home {
+    margin-top: 50px;
+  }
 }
 
 .details {
@@ -458,59 +560,6 @@
 }
 
 /* projects */
-.projctMain {
-  margin-top: 18%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.sliding {
-  position: relative;
-  animation: visibility 1s linear;
-}
-.d-block {
-  display: block !important;
-}
-.d-none {
-  display: none !important;
-}
-.projectContainer {
-  margin: 20px;
-  height: 70vh;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  border-radius: 20px;
-  background: linear-gradient(225deg, var(--main-color), #c58c7d);
-  box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #863d3d;
-}
-.projectImg {
-  margin-top: 4%;
-  width: 600px;
-  height: 300px;
-}
-
-.chatImages img {
-  margin-top: 4%;
-  width: 150px;
-  height: 300px;
-}
-
-.discription {
-  margin: 10px;
-}
-
-.title {
-  margin-top: 2%;
-}
-#icons {
-  font-size: 30px;
-}
 
 @keyframes visibility {
   from {
@@ -550,17 +599,6 @@ textarea {
 #message {
   width: 50%;
   height: 100px;
-}
-
-#submit {
-  color: var(--box-color);
-  font-size: 30px;
-  border-radius: 10px;
-  background-color: var(--back-color);
-}
-
-#submit:hover {
-  background-color: rgb(206, 168, 206);
 }
 
 .experiences {

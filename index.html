@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Resume</title>
     <link rel="stylesheet" href="Style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
-    />
   </head>
   <body>
     <div class="profile">
@@ -131,12 +127,7 @@
       </div>
       <div class="contents" id="projects">
         <div class="projctMain">
-          <i
-            class="fa-solid fa-circle-arrow-left"
-            onclick="plusDivs(+1)"
-            id="icons"
-            aria-hidden="true"
-          ></i>
+          <button class="button" onclick="plusDivs(+1)">Previous</button>
           <div class="mySlides">
             <div class="projectContainer">
               <div class="title">News Web App</div>
@@ -168,8 +159,32 @@
                   class="chatImages"
                 >
                   <img src="ChatApp1.png" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/navinrapelli/WhataAppClonePro/tree/DevBranch"
+                  target="_blank"
+                  class="chatImages"
+                >
                   <img src="ChatApp2.png" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/navinrapelli/WhataAppClonePro/tree/DevBranch"
+                  target="_blank"
+                  class="chatImages"
+                >
                   <img src="ChatApp3.png" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/navinrapelli/WhataAppClonePro/tree/DevBranch"
+                  target="_blank"
+                  class="chatImages"
+                >
                   <img src="ChatApp4.png" />
                 </a>
               </div>
@@ -193,9 +208,18 @@
                   class="chatImages"
                 >
                   <img src="favScreen1.png" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/navinrapelli/Projectss/tree/master/FavoriteApp"
+                  target="_blank"
+                  class="chatImages"
+                >
                   <img src="favScreen2.png" />
                 </a>
               </div>
+
               <div class="discription">
                 This is Favourite List App Build with React Native Where you can
                 capture your Favourite place or choose it from your gallary and
@@ -207,11 +231,7 @@
               </div>
             </div>
           </div>
-          <i
-            class="fa-solid fa-circle-arrow-right"
-            onclick="plusDivs(-1)"
-            id="icons"
-          ></i>
+          <button class="button" onclick="plusDivs(-1)">Next</button>
         </div>
       </div>
       <div class="contents" id="experiences">
@@ -264,21 +284,13 @@
             <br />
             <input type="tel" name="phoneNumber" />
             <br />
-            <label for="message">Your Message :</label>
+            <button class="button" id="submit">Submit</button>
             <br />
-            <textarea
-              id="w3review"
-              name="w3review"
-              rows="4"
-              cols="50"
-            ></textarea>
-            <br />
-            <button id="submit">Submit</button>
           </form>
         </div>
       </div>
     </div>
-    <div class="menu">
+    <div class="menu" id="mainMenu">
       <a href="#home" target="_self"><span>Home</span> </a>
       <a href="#skills" target="_self"> <span>Skills</span> </a>
       <a href="#projects" target="_self"> <span>Projects</span> </a>
