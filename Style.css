@@ -1,0 +1,559 @@
+:root {
+  --main-color: #972525;
+  --back-color: #003049;
+  --box-color: white;
+  background-color: var(--main-color);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--box-color);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .profile {
+    margin: 20px;
+    position: fixed;
+    left: 2%;
+    top: 2%;
+    height: 95vh;
+    width: 20%;
+    border-radius: 50px;
+    background: linear-gradient(225deg, var(--main-color), #7e5246);
+    box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #3f2b2b;
+  }
+
+  #pic {
+    position: relative;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    background: linear-gradient(225deg, var(--main-color), #7e5246);
+    box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #3f2b2b;
+  }
+
+  .content {
+    position: relative;
+    left: 25%;
+    margin: 20px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .content h1 {
+    color: var(--box-color);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(20) infinite,
+      blink-caret 0.5s step-end infinite;
+  }
+
+  .button.cv {
+    text-align: center;
+    position: fixed;
+    right: 20%;
+    top: 10%;
+    text-decoration: none;
+    height: 2%;
+    width: 10%;
+  }
+  .button {
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--box-color);
+    background-color: var(--back-color);
+    transition-property: all;
+    transition-duration: 10ms;
+    transition-delay: 50ms;
+  }
+  .button:hover {
+    background-color: rgb(206, 168, 206);
+    font-size: large;
+  }
+
+  .modeD {
+    padding: 15px;
+    font-size: small;
+    text-align: center;
+    position: fixed;
+    right: 13%;
+    top: 7%;
+    background-color: var(--back-color);
+    height: 30px;
+    width: 30px;
+    border: 2px white solid;
+    border-radius: 50%;
+    transition: all 1s ease-in;
+  }
+  .modeD:hover {
+    transform: rotate(180deg);
+    background-color: white;
+    color: #ba7f6f;
+  }
+
+  .menu {
+    margin: 20px;
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    height: 95vh;
+    width: 7%;
+    border-radius: 50px;
+    background: linear-gradient(225deg, var(--main-color), #756675);
+    box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #3f2b2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .menu a {
+    color: var(--box-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    height: 12%;
+    width: 80%;
+    border-radius: 10px;
+    background: var(--back-color);
+  }
+
+  .menu a:hover {
+    background-color: rgb(206, 168, 206);
+    font-size: large;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile {
+    position: relative;
+    height: 95vh;
+    width: 90%;
+    border-radius: 50px;
+    background: linear-gradient(225deg, var(--main-color), #756675);
+    box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #3f2b2b;
+  }
+
+  #pic {
+    position: relative;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #3f2b2b;
+  }
+
+  .content {
+    position: relative;
+    left: 2%;
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .content h1 {
+    font-size: medium;
+    color: var(--box-color);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(20) infinite,
+      blink-caret 0.5s step-end infinite;
+  }
+
+  .button {
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--box-color);
+    background-color: rgb(186, 127, 111);
+    transition-property: all;
+    transition-duration: 10ms;
+    transition-delay: 50ms;
+  }
+  .button:hover {
+    background-color: rgb(206, 168, 206);
+    font-size: large;
+  }
+
+  .button.cv {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    left: 5%;
+    top: 0%;
+    font-size: small;
+    text-decoration: none;
+    width: 40%;
+  }
+
+  .modeD {
+    position: absolute;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    right: 12%;
+    top: -5px;
+    background-color: #ba7f6f;
+    height: 20px;
+    width: 20px;
+    border: 2px white solid;
+    border-radius: 50%;
+    transition: all 1s ease-in;
+  }
+  .modeD:hover {
+    transform: rotate(180deg);
+    background-color: white;
+    color: #ba7f6f;
+  }
+
+  .menu {
+    font-size: small;
+    position: fixed;
+    left: 40%;
+    top: 2%;
+    height: 95vh;
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .menu a {
+    color: var(--box-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    height: 12%;
+    width: 80%;
+    border-radius: 10px;
+    background: #ba7f6f;
+  }
+  .menu a span {
+    transform: rotate(90deg);
+  }
+
+  .menu a:hover {
+    background-color: rgb(206, 168, 206);
+  }
+}
+
+.details {
+  margin: 20px;
+}
+.icons img {
+  margin: 3px;
+  width: 15%;
+  aspect-ratio: 2/2;
+  object-fit: contain;
+  mix-blend-mode: color;
+}
+.icons img:hover {
+  width: 13%;
+  border: 2px solid rgb(105, 60, 60);
+  mix-blend-mode: multiply;
+}
+
+.content h2 {
+  position: relative;
+  animation: moveAni 5s alternate infinite;
+}
+/* Content */
+
+.contents {
+  height: 100vh;
+  width: 90%;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes moveAni {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 25%;
+  }
+}
+
+/* Menu */
+
+/* bar */
+
+#skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.primaryContainer {
+  margin: 2%;
+  margin-top: 16%;
+  height: 80vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.secondaryContainer {
+  margin: 2%;
+  margin-top: 18%;
+  display: flex;
+  height: 30vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.barContainer {
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(225deg, var(--main-color), #c58c7d);
+  box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #863d3d;
+}
+.barOuter {
+  margin: 10px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 30px;
+  width: 300px;
+  color: white;
+  border-radius: 20px;
+}
+
+.barInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #003049;
+  animation: skills 1s ease-in normal;
+}
+
+.barInner:hover {
+  background-color: #669bbc;
+}
+
+.h-80 {
+  width: 80%;
+}
+
+.h-70 {
+  width: 70%;
+}
+
+.h-60 {
+  width: 60%;
+}
+
+.h-50 {
+  width: 50%;
+}
+
+.h-30 {
+  width: 30%;
+}
+
+/* projects */
+.projctMain {
+  margin-top: 18%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sliding {
+  position: relative;
+  animation: visibility 1s linear;
+}
+.d-block {
+  display: block !important;
+}
+.d-none {
+  display: none !important;
+}
+.projectContainer {
+  margin: 20px;
+  height: 70vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 20px;
+  background: linear-gradient(225deg, var(--main-color), #c58c7d);
+  box-shadow: -35px 35px 97px #1b1818, 35px -35px 97px #863d3d;
+}
+.projectImg {
+  margin-top: 4%;
+  width: 600px;
+  height: 300px;
+}
+
+.chatImages img {
+  margin-top: 4%;
+  width: 150px;
+  height: 300px;
+}
+
+.discription {
+  margin: 10px;
+}
+
+.title {
+  margin-top: 2%;
+}
+#icons {
+  font-size: 30px;
+}
+
+@keyframes visibility {
+  from {
+    width: 80%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes skills {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+/* content */
+
+.contentMain {
+  margin-top: 18%;
+  width: 100%;
+  font-weight: bold;
+}
+
+.contactForm input,
+textarea {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 23px;
+  border: 2px solid rgb(213, 138, 218);
+  border-radius: 10px;
+}
+
+#message {
+  width: 50%;
+  height: 100px;
+}
+
+#submit {
+  color: var(--box-color);
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: var(--back-color);
+}
+
+#submit:hover {
+  background-color: rgb(206, 168, 206);
+}
+
+.experiences {
+  margin-top: 12%;
+  width: 100%;
+  font-weight: bold;
+}
+
+.experiencesContainer {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
+
+.line {
+  background-color: var(--box-color);
+  width: 3%;
+  margin: 10px;
+}
+
+.firstBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.secondBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.innerLine {
+  position: relative;
+  background-color: var(--back-color);
+  align-items: center;
+  padding: 3px;
+  animation: moveee 2s ease-in alternate infinite;
+}
+
+@keyframes moveee {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 80%;
+  }
+}

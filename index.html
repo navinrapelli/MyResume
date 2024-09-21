@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="profile">
+      <h2 style="text-align: center">
+        Navin <br />
+        Rapelli
+      </h2>
+      <img id="pic" src="profile.jpg" />
+      <div class="details">
+        <p>Specialization:</p>
+        <h3>Front End Developer</h3>
+        <p>Based in:</p>
+        <h4>Solapur, Maharashtra</h4>
+        <div class="icons">
+          <a href="tel:9579118286"
+            ><img src="phoneCol.png" alt="9579118286"
+          /></a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=navin29rapelli@gmail.com"
+            target="_blank"
+          >
+            <img src="email.png" />
+          </a>
+          <a href="https://www.instagram.com/navu_29rapelli/" target="_blank"
+            ><img src="insta.jpg"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/navin-rapelli-18306b1b2/?originalSubdomain=in"
+            target="_blank"
+            ><img src="linkedin.png"
+          /></a>
+          <a href="https://github.com/navinrapelli" target="_blank"
+            ><img src="githuncol.jpg"
+          /></a>
+        </div>
+        <br />
+        <a
+          style="text-decoration: none"
+          href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=navin29rapelli@gmail.com"
+          target="_blank"
+          ><div class="button">Let's Work Together</div></a
+        >
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="button cv">Downloade CV</div>
+      <div class="modeD active" onclick="DarkMode(1)">Dark Mode</div>
+      <div class="contents" id="home">
+        <h1>
+          Hi,Guys I am Navin Rapelli,
+          <br />
+        </h1>
+        <h2>Front End Developer</h2>
+
+        <h3>
+          Passionate About Creating Great User Experiences And Have A Strong
+          <br />
+          Understanding Of Usability And Accessibility Standards
+        </h3>
+      </div>
+      <div class="contents" id="skills">
+        <div class="primaryContainer">
+          <h3 class="barContainer">Primary Skills</h3>
+          <div class="barContainer">
+            <div>HTML:</div>
+            <div class="barOuter">
+              <div class="barInner h-80">80%</div>
+            </div>
+          </div>
+          <div class="barContainer">
+            <div>CSS:</div>
+            <div class="barOuter">
+              <div class="barInner h-80">80%</div>
+            </div>
+          </div>
+          <div class="barContainer">
+            <div>JavaScript:</div>
+            <div class="barOuter">
+              <div class="barInner h-70">70%</div>
+            </div>
+          </div>
+          <div class="barContainer">
+            <div>JQuery:</div>
+            <div class="barOuter">
+              <div class="barInner h-50">50%</div>
+            </div>
+          </div>
+          <div class="barContainer">
+            <div>React:</div>
+            <div class="barOuter">
+              <div class="barInner h-50">50%</div>
+            </div>
+          </div>
+          <div class="barContainer">
+            <div>React<br />Native:</div>
+            <div class="barOuter">
+              <div class="barInner h-50">50%</div>
+            </div>
+          </div>
+        </div>
+        <div class="secondaryContainer">
+          <h3 class="barContainer">Secondary Skills</h3>
+          <div class="barContainer">
+            <div>Java:</div>
+            <div class="barOuter">
+              <div class="barInner h-30">30%</div>
+            </div>
+          </div>
+          <div class="barContainer">
+            <div>
+              Spring <br />
+              Boot:
+            </div>
+            <div class="barOuter">
+              <div class="barInner h-30">30%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contents" id="projects">
+        <div class="projctMain">
+          <i
+            class="fa-solid fa-circle-arrow-left"
+            onclick="plusDivs(+1)"
+            id="icons"
+          ></i>
+          <div class="mySlides">
+            <div class="projectContainer">
+              <div class="title">News Web App</div>
+              <div>
+                <a
+                  href="https://github.com/navinrapelli/NewsShow/tree/master/news-web"
+                  target="_blank"
+                >
+                  <img class="projectImg" src="ReactNewsApp.png" />
+                </a>
+              </div>
+              <div class="discription">
+                This is News Web App Build with React It will show all the
+                latest News from all the News channels According to the selected
+                categories.
+                <br />
+                <br />
+                <strong> Click on image to see the source Code </strong>
+              </div>
+            </div>
+          </div>
+          <div class="mySlides">
+            <div class="projectContainer">
+              <div class="title">Chat App</div>
+              <div>
+                <a
+                  href="https://github.com/navinrapelli/WhataAppClonePro/tree/DevBranch"
+                  target="_blank"
+                  class="chatImages"
+                >
+                  <img src="ChatApp1.png" />
+                  <img src="ChatApp2.png" />
+                  <img src="ChatApp3.png" />
+                  <img src="ChatApp4.png" />
+                </a>
+              </div>
+              <div class="discription">
+                This is the Chat app (Whats App Clone) Build with React Native.
+                We can see the contact list and We can update our profile
+                details We can also update our status and also we can chat
+                <br />
+                <br />
+                <strong> Click on images to see the source Code </strong>
+              </div>
+            </div>
+          </div>
+          <div class="mySlides">
+            <div class="projectContainer">
+              <div class="title">Favourite List App</div>
+              <div>
+                <a
+                  href="https://github.com/navinrapelli/Projectss/tree/master/FavoriteApp"
+                  target="_blank"
+                  class="chatImages"
+                >
+                  <img src="favScreen1.png" />
+                  <img src="favScreen2.png" />
+                </a>
+              </div>
+              <div class="discription">
+                This is Favourite List App Build with React Native Where you can
+                capture your Favourite place or choose it from your gallary and
+                add into the Favourite List
+
+                <br />
+                <br />
+                <strong> Click on images to see the source Code </strong>
+              </div>
+            </div>
+          </div>
+          <i
+            class="fa-solid fa-circle-arrow-right"
+            onclick="plusDivs(-1)"
+            id="icons"
+          ></i>
+        </div>
+      </div>
+      <div class="contents" id="experiences">
+        <div class="experiences">
+          <div class="experiencesContainer">
+            <div class="firstBox">
+              <div class="one">
+                <h5>
+                  Working on migrating the cordova application to the React
+                  Native ------- <br />
+                  application features and design
+                </h5>
+                <h2>2023</h2>
+              </div>
+              <div class="two">
+                <h5>
+                  Joined the company as a fresher. Trained on full stack with
+                  react. <br />Got the project and got opportunity to work on
+                  web application ------- technology stack of JavaScript ,
+                  Jquery , Html , CSS
+                </h5>
+                <h2>2021</h2>
+              </div>
+            </div>
+            <div class="line">
+              <div class="innerLine">.</div>
+            </div>
+            <div class="secondBox">
+              <div>
+                <div>
+                  <h5>
+                    ------- Got opportunity to work on hybrid mobile application
+                    with Stack of cordova , mobile Jquery
+                  </h5>
+                  <h2>2022</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contents" id="contact">
+        <div class="contentMain">
+          <form class="contactForm">
+            <label for="fullName">Full Name :</label>
+            <br />
+            <input type="text" name="fullName" />
+            <br />
+            <label for="phoneNumber">Phone Number :</label>
+            <br />
+            <input type="tel" name="phoneNumber" />
+            <br />
+            <label for="message">Your Message :</label>
+            <br />
+            <textarea
+              id="w3review"
+              name="w3review"
+              rows="4"
+              cols="50"
+            ></textarea>
+            <br />
+            <button id="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="#home" target="_self"><span>Home</span> </a>
+      <a href="#skills" target="_self"> <span>Skills</span> </a>
+      <a href="#projects" target="_self"> <span>Projects</span> </a>
+      <a href="#experiences" target="_self"> <span>Experiences</span> </a>
+      <a href="#contact" target="_self"><span>Contact</span> </a>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
